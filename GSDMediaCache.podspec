@@ -12,7 +12,8 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/xq-120/GSDMediaCache.git", :tag => "#{spec.version}" }
   spec.source_files = "GSDMediaCache/*.{h,m}"
-  spec.resources    = ['GSDMediaCache/Resource/PrivacyInfo.xcprivacy']
+
+  spec.resource_bundles = {"GSDMediaCache" => "GSDMediaCache/Resources/PrivacyInfo.xcprivacy"}
 
   spec.frameworks   = "Foundation"
 
